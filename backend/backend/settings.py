@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-eqspo)@6^a(w%#kn-$a)n(7p288qefgmp6_#0%0h!!okb378i$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
