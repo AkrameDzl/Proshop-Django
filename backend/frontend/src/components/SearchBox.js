@@ -19,8 +19,8 @@ function SearchBox() {
         type='search'
         name='q'
         onChange={(e) => setKeyword(e.target.value)}
-        className='mr-sm-2 ml-sm-5 '></Form.Control>
-      <Button type='submit' className='p-2'>
+        className='mr-sm-2 ml-sm-5'></Form.Control>
+      <Button type='submit' className='p-2 bg-secondary'>
         <i class='fas fa-search'></i>
       </Button>
     </Form>

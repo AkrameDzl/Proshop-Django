@@ -1,6 +1,13 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { Container, Row, Navbar, Nav, NavDropdown } from "react-bootstrap"
+import {
+  Container,
+  Row,
+  Navbar,
+  Nav,
+  NavDropdown,
+  Image,
+} from "react-bootstrap"
 import { LinkContainer } from "react-router-bootstrap"
 import { logout } from "../actions/userActions"
 import SearchBox from "./SearchBox"
@@ -16,7 +23,17 @@ function Header() {
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>ProShop</Navbar.Brand>
+            <Navbar.Brand>
+              <Image
+                src='/static/images/logo.svg'
+                alt='ProShop'
+                fluid
+                responsive
+                width='80'
+                height='80'
+                className='d-inline-block align-top'
+              />
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
