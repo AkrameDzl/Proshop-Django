@@ -41,7 +41,7 @@ function Header() {
               ) : (
                 <LinkContainer to='/login'>
                   <Nav.Link>
-                    <i className='fas fa-user'></i>Login
+                    <i className='fas fa-user mr-1'></i>Login
                   </Nav.Link>
                 </LinkContainer>
               )}

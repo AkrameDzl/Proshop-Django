@@ -15,6 +15,7 @@ function SearchBox() {
   return (
     <Form onSubmit={submitHandler} inline>
       <Form.Control
+        placeholder='Search'
         type='search'
         name='q'
         onChange={(e) => setKeyword(e.target.value)}

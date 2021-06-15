@@ -26,34 +26,34 @@ function LoginScreen({ location, history }) {
   return (
     <FormContainer>
       <h1>Sign In</h1>
-      {error && <Message variant="danger">{error}</Message>}
+      {error && <Message variant='danger'>{error}</Message>}
       {loading && <Loader />}
       <Form onSubmit={submitHandler}>
-        <Form.Group contolId="email">
+        <Form.Group contolId='email'>
           <Form.Label>Email Address</Form.Label>
           <Form.Control
-            type="email"
-            placeholder="Enter Email"
+            type='email'
+            placeholder='Enter Email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}></Form.Control>
         </Form.Group>
 
-        <Form.Group contolId="password">
+        <Form.Group contolId='password'>
           <Form.Label>Password</Form.Label>
           <Form.Control
-            type="password"
-            placeholder="Enter Password"
+            type='password'
+            placeholder='Enter Password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}></Form.Control>
         </Form.Group>
 
-        <Row className="py-3">
-          <Button type="submit" variant="primary">
+        <Row className='py-3'>
+          <Button type='submit' variant='primary'>
             Sign In
           </Button>
         </Row>
       </Form>
-      <Row className="py-3">
+      <Row className='py-3'>
         <Col>
           New Customer ?{" "}
           <Link to={redirect ? `/register?redirect=${redirect}` : "/register"}>
